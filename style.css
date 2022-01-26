@@ -8,7 +8,7 @@ body{
 
 .headline{
     color:rgb(27, 202, 144);
-    font-size: 60px;
+    font-size: 50px;
 }
 #game{
     display: grid;
@@ -20,7 +20,14 @@ body{
     max-width: 450px;
     padding: 50px;
     background-color: rgb(78, 187, 133);
+    border-radius: 30px;
 }
+@media screen and (max-width: 500px) {
+    #game{
+        grid-column-gap: 0px;
+    }
+}
+
 #end{
     display: flex;
     flex-direction: column;
