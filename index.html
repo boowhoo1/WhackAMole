@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack A Mole</title>
+    <link href="style.css" rel="stylesheet">
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1 class="headline">Whack A Mole</h1>
+    <h2> score: <span id="score">0</span> </h2>
+    <h2> time left: <span id="timeleft">0</span> </h2>
+    <div id="start">
+        <button onclick="start()">
+            start
+        </button>
+
+    </div>
+    <div id="end" style="display: none;">
+        <h2>gameover!</h2>
+
+        <button onclick="location.reload()">
+            restart
+        </button>
+    </div>
+
+    <div id="game" style="display: none;">
+        <div class="hole">
+            <img class="mole" src="./image/mole.svg" onclick="hit(this)">
+            <div class="earth"></div>
+            <div class="overlay"></div>
+        </div>
+        <div class="hole">
+            <img class="mole" src="./image/mole.svg" onclick="hit(this)">
+
+            <div class="earth"></div>
+            <div class="overlay"></div>
+        </div>
+        <div class="hole">
+            <img class="mole" src="./image/mole.svg" onclick="hit(this)">
+
+            <div class="earth"></div>
+            <div class="overlay"></div>
+        </div>
+        <div class="hole">
+            <img class="mole" src="./image/mole.svg" onclick="hit(this)">
+            <div class="earth"></div>
+            <div class="overlay"></div>
+        </div>
+        <div class="hole">
+            <img class="mole" src="./image/mole.svg" onclick="hit(this)">
+
+            <div class="earth"></div>
+            <div class="overlay"></div>
+        </div>
+        <div class="hole">
+            <img class="mole" src="./image/mole.svg" onclick="hit(this)">
+
+            <div class="earth"></div>
+            <div class="overlay"></div>
+        </div>
+        <div class="hole">
+            <img class="mole" src="./image/mole.svg" onclick="hit(this)">
+            <div class="earth"></div>
+            <div class="overlay"></div>
+        </div>
+        <div class="hole">
+            <img class="mole" src="./image/mole.svg" onclick="hit(this)">
+
+            <div class="earth"></div>
+            <div class="overlay"></div>
+        </div>
+        <div class="hole">
+            <img class="mole" src="./image/mole.svg" onclick="hit(this)">
+
+            <div class="earth"></div>
+            <div class="overlay"></div>
+        </div>
+    </div>
+</body>
+
+</html>

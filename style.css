@@ -1,0 +1,59 @@
+body{
+    background-color:cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline{
+    color:rgb(27, 202, 144);
+    font-size: 60px;
+}
+#game{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 80px;
+    width: 50%;
+    max-width: 450px;
+    padding: 50px;
+    background-color: rgb(78, 187, 133);
+}
+#end{
+    display: flex;
+    flex-direction: column;
+}
+.hole{
+    width: 100%;
+    height: 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.mole{
+    width: 50px;
+    top: 9px;    
+    position: relative;
+    transition: top 500ms ease-in-out;
+        
+}
+.mole-up{
+    top: -22px;
+}
+.earth{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(139, 77, 48);
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    top:5px;
+    background-color: rgb(78, 187, 133);
+}
