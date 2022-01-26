@@ -5,15 +5,22 @@ let animationFrame;
 const gameDuration = 60000;
 
 function start() {
+    const moles = document.querySelectorAll(".mole");
     startTime = Date.now();
     previousTime = Date.now();
-
-
+    
+    moles.forEach(function(mole){
+        mole.addEventListener("mousedown", function(){
+            hit(mole);
+        })
+    })
+    
     animationFrame = window.requestAnimationFrame(loop);
 
     document.querySelector("#start").style.display = "none";
     document.querySelector("#game").style.display = "grid";
 }
+
 function end() {
     window.cancelAnimationFrame(animationFrame);
     document.querySelector("#game").style.display = "none";
