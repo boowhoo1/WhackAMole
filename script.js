@@ -6,11 +6,12 @@ const gameDuration = 60000;
 
 function start() {
     const moles = document.querySelectorAll(".mole");
+    const clickaction = "ontouchstart" in window ? "touchstart" : "mousedown";
     startTime = Date.now();
     previousTime = Date.now();
     
     moles.forEach(function(mole){
-        mole.addEventListener("mousedown", function(){
+        mole.addEventListener(clickaction, function(){
             hit(mole);
         })
     })
